@@ -1,4 +1,5 @@
-" Call pathogen
+" Init and call pathogen
+runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
 " General Vim settings
