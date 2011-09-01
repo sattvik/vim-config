@@ -33,3 +33,6 @@ syntax enable
 filetype plugin indent on 
 
 colorscheme sattvik
+
+" WM Graphviz
+let g:WMGraphviz_output="png"
