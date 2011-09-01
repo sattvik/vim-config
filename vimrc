@@ -36,3 +36,6 @@ colorscheme sattvik
 
 " WM Graphviz
 let g:WMGraphviz_output="png"
+
+" GnuPG plugin
+let g:GPGUsePipes=1

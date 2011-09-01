@@ -4,3 +4,6 @@
 [submodule "bundle/wmgraphviz"]
 	path = bundle/wmgraphviz
 	url = https://github.com/wannesm/wmgraphviz.vim.git
+[submodule "bundle/gnupg"]
+	path = bundle/gnupg
+	url = https://git.gitorious.org/vim-gnupg/vim-gnupg.git
