@@ -1,6 +1,7 @@
 " Init and call pathogen
 runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
+call pathogen#helptags()
 
 " General Vim settings
 set autoindent
