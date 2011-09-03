@@ -39,3 +39,11 @@ let g:WMGraphviz_output="png"
 
 " GnuPG plugin
 let g:GPGUsePipes=1
+
+" Supertab
+let g:SuperTabDefaultCompletionType="context"
+"let g:SuperTabDefaultCompletionTypeDiscovery = [
+"      \ "&completefunc:<c-x><c-u>",
+"      \ "&omnifunc:<c-x><c-o>",
+"      \ ]
+"let g:SuperTabLongestHighlight=1
