@@ -34,6 +34,9 @@ filetype plugin indent on
 
 colorscheme sattvik
 
+" C options
+let c_space_errors = 1
+
 " WM Graphviz
 let g:WMGraphviz_output="png"
 
