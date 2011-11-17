@@ -50,3 +50,13 @@ let g:SuperTabDefaultCompletionType="context"
 "      \ "&omnifunc:<c-x><c-o>",
 "      \ ]
 "let g:SuperTabLongestHighlight=1
+
+" Make Ctrl-/ toggle comments with NERD commenter
+nmap <silent> <C-_> :call NERDComment(0, "toggle")<cr>
+vmap <silent> <C-_> :call NERDComment(1, "toggle")<cr>
+
+" Make F2 and S-F2 go to next/previous quickfix
+nmap <silent> <F2> :cn<cr>
+nmap <silent> <S-F2> :cp<cr>
+
+nmap <silent> <F9> :mak<cr>
