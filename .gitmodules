@@ -31,3 +31,6 @@
 [submodule "bundle/qmake-syntax-vim"]
 	path = bundle/qmake-syntax-vim
 	url = https://github.com/sattvik/qmake-syntax-vim
+[submodule "bundle/vimclojure"]
+	path = bundle/vimclojure
+	url = https://github.com/vim-scripts/VimClojure.git

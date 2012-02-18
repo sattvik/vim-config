@@ -66,3 +66,10 @@ nmap <silent> <F2> :cn<cr>
 nmap <silent> <S-F2> :cp<cr>
 
 nmap <silent> <F9> :mak<cr>
+
+" VimClojure settings
+let g:vimclojure#WantNailgun = 1
+let g:vimclojure#ParenRainbow = 1
+let g:vimclojure#DynamicHighlighting = 1
+let g:vimclojure#SplitPos = "bottom"
+let g:vimclojure#FuzzyIndent = 1
