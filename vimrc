@@ -34,6 +34,9 @@ filetype plugin indent on
 
 colorscheme sattvik
 
+" C options
+let c_space_errors = 1
+
 " WM Graphviz
 let g:WMGraphviz_output="png"
 
@@ -53,3 +56,13 @@ set grepprg=grep\ -nH\ $*
 let g:tex_flavor='latex'
 let g:Tex_CompileRule_pdf = 'xelatex -shell-escape -interaction=nonstopmode $*'
 let g:Tex_DefaultTargetFormat = 'pdf'
+
+" Make Ctrl-/ toggle comments with NERD commenter
+nmap <silent> <C-_> :call NERDComment(0, "toggle")<cr>
+vmap <silent> <C-_> :call NERDComment(1, "toggle")<cr>
+
+" Make F2 and S-F2 go to next/previous quickfix
+nmap <silent> <F2> :cn<cr>
+nmap <silent> <S-F2> :cp<cr>
+
+nmap <silent> <F9> :mak<cr>
