@@ -47,3 +47,9 @@ let g:SuperTabDefaultCompletionType="context"
 "      \ "&omnifunc:<c-x><c-o>",
 "      \ ]
 "let g:SuperTabLongestHighlight=1
+
+" LaTeX-suite
+set grepprg=grep\ -nH\ $*
+let g:tex_flavor='latex'
+let g:Tex_CompileRule_pdf = 'xelatex -shell-escape -interaction=nonstopmode $*'
+let g:Tex_DefaultTargetFormat = 'pdf'
