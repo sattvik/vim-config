@@ -61,15 +61,19 @@ let g:Tex_DefaultTargetFormat = 'pdf'
 nmap <silent> <C-_> :call NERDComment(0, "toggle")<cr>
 vmap <silent> <C-_> :call NERDComment(1, "toggle")<cr>
 
-" Make F2 and S-F2 go to next/previous quickfix
-nmap <silent> <F2> :cn<cr>
-nmap <silent> <S-F2> :cp<cr>
-
-nmap <silent> <F9> :mak<cr>
-
 " VimClojure settings
 let g:vimclojure#WantNailgun = 1
 let g:vimclojure#ParenRainbow = 1
 let g:vimclojure#DynamicHighlighting = 1
 let g:vimclojure#SplitPos = "bottom"
 let g:vimclojure#FuzzyIndent = 1
+
+
+" Make F2 and S-F2 go to next/previous quickfix
+nmap <silent> <F2> :cn<cr>
+nmap <silent> <S-F2> :cp<cr>
+
+nmap <silent> <F9>  :mak<cr>
+nmap <silent> <F10> :mak check<cr>
+
+nmap <silent> <F8> :TagbarToggle<CR>
