@@ -57,6 +57,12 @@ let g:tex_flavor='latex'
 let g:Tex_CompileRule_pdf = 'xelatex -shell-escape -interaction=nonstopmode $*'
 let g:Tex_DefaultTargetFormat = 'pdf'
 
+" CppOmniComplete
+set tags+=/local/tags/qt4
+set tags+=/local/tags/boost
+let OmniCpp_ShowPrototypeInAbbr = 1
+autocmd CursorMovedI,InsertLeave * if pumvisible() == 0|pclose|endif
+
 " Make Ctrl-/ toggle comments with NERD commenter
 nmap <silent> <C-_> :call NERDComment(0, "toggle")<cr>
 vmap <silent> <C-_> :call NERDComment(1, "toggle")<cr>
