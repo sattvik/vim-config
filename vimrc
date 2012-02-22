@@ -57,6 +57,11 @@ let g:tex_flavor='latex'
 let g:Tex_CompileRule_pdf = 'xelatex -shell-escape -interaction=nonstopmode $*'
 let g:Tex_DefaultTargetFormat = 'pdf'
 
+" Tagbar
+let g:tagbar_autoclose = 1
+let g:tagbar_autofocus = 1
+let g:tagbar_autoshowtag = 1
+
 " Make Ctrl-/ toggle comments with NERD commenter
 nmap <silent> <C-_> :call NERDComment(0, "toggle")<cr>
 vmap <silent> <C-_> :call NERDComment(1, "toggle")<cr>
