@@ -57,13 +57,6 @@ let g:tex_flavor='latex'
 let g:Tex_CompileRule_pdf = 'xelatex -shell-escape -interaction=nonstopmode $*'
 let g:Tex_DefaultTargetFormat = 'pdf'
 
-
-" CppOmniComplete
-set tags+=/local/tags/qt4
-set tags+=/local/tags/boost
-let OmniCpp_ShowPrototypeInAbbr = 1
-autocmd CursorMovedI,InsertLeave * if pumvisible() == 0|pclose|endif
-
 " Tagbar
 let g:tagbar_autoclose = 1
 let g:tagbar_autofocus = 1
