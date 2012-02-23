@@ -57,11 +57,17 @@ let g:tex_flavor='latex'
 let g:Tex_CompileRule_pdf = 'xelatex -shell-escape -interaction=nonstopmode $*'
 let g:Tex_DefaultTargetFormat = 'pdf'
 
+
 " CppOmniComplete
 set tags+=/local/tags/qt4
 set tags+=/local/tags/boost
 let OmniCpp_ShowPrototypeInAbbr = 1
 autocmd CursorMovedI,InsertLeave * if pumvisible() == 0|pclose|endif
+
+" Tagbar
+let g:tagbar_autoclose = 1
+let g:tagbar_autofocus = 1
+let g:tagbar_autoshowtag = 1
 
 " Make Ctrl-/ toggle comments with NERD commenter
 nmap <silent> <C-_> :call NERDComment(0, "toggle")<cr>
@@ -74,6 +80,11 @@ let g:vimclojure#DynamicHighlighting = 1
 let g:vimclojure#SplitPos = "bottom"
 let g:vimclojure#FuzzyIndent = 1
 
+" NERDTree
+nmap <silent> <F7> :NERDTreeToggle<CR>
+autocmd vimenter * if !argc() | NERDTree | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
 
 " Make F2 and S-F2 go to next/previous quickfix
 nmap <silent> <F2> :cn<cr>
@@ -83,3 +94,8 @@ nmap <silent> <F9>  :mak<cr>
 nmap <silent> <F10> :mak check<cr>
 
 nmap <silent> <F8> :TagbarToggle<CR>
+
+"Powerline
+let Powerline_symbols='unicode'
+let Powerline_colorscheme='sattvik'
+set laststatus=2
