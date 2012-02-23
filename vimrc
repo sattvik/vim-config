@@ -87,3 +87,8 @@ nmap <silent> <F9>  :mak<cr>
 nmap <silent> <F10> :mak check<cr>
 
 nmap <silent> <F8> :TagbarToggle<CR>
+
+"Powerline
+let Powerline_symbols='unicode'
+let Powerline_colorscheme='sattvik'
+set laststatus=2
