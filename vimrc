@@ -99,3 +99,7 @@ nmap <silent> <F8> :TagbarToggle<CR>
 let Powerline_symbols='unicode'
 let Powerline_colorscheme='sattvik'
 set laststatus=2
+
+" clang-complete
+let g:clang_complete_copen=1
+let g:clang_auto_user_options="path, .clang_complete, gcc"
