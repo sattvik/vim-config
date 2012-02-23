@@ -43,3 +43,6 @@
 [submodule "bundle/clang-complete"]
 	path = bundle/clang-complete
 	url = https://github.com/Rip-Rip/clang_complete.git
+[submodule "bundle/lusty"]
+	path = bundle/lusty
+	url = https://github.com/sjbach/lusty.git
