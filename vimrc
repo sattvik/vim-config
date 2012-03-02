@@ -93,5 +93,14 @@ let Powerline_symbols='unicode'
 let Powerline_colorscheme='sattvik'
 set laststatus=2
 
+
 " Lusty juggler
 let g:LustyJugglerShowKeys = 'a'
+
+" clang-complete
+let g:clang_auto_select=1
+let g:clang_complete_copen=1
+let g:clang_periodic_quickfix=0
+let g:clang_complete_macros=1
+let g:clang_complete_patterns=1
+nmap <silent> <leader>qc :call g:ClangUpdateQuickFix()<CR>
