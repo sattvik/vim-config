@@ -92,3 +92,6 @@ nmap <silent> <F8> :TagbarToggle<CR>
 let Powerline_symbols='unicode'
 let Powerline_colorscheme='sattvik'
 set laststatus=2
+
+" Lusty juggler
+let g:LustyJugglerShowKeys = 'a'
