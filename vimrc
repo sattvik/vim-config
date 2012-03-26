@@ -73,12 +73,6 @@ let g:vimclojure#DynamicHighlighting = 1
 let g:vimclojure#SplitPos = "bottom"
 let g:vimclojure#FuzzyIndent = 1
 
-" NERDTree
-nmap <silent> <F7> :NERDTreeToggle<CR>
-autocmd vimenter * if !argc() | NERDTree | endif
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-
-
 " Make F2 and S-F2 go to next/previous quickfix
 nmap <silent> <F2> :cn<cr>
 nmap <silent> <S-F2> :cp<cr>
