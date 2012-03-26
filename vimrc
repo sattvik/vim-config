@@ -26,8 +26,8 @@ set tabstop=8
 set title
 set wildmenu
 
-let mapleader=",,"
-let maplocalleader=",,"
+let mapleader=","
+let maplocalleader=","
 
 syntax enable
 filetype plugin indent on 
