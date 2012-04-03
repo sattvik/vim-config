@@ -71,6 +71,7 @@ let g:vimclojure#WantNailgun = 1
 let g:vimclojure#ParenRainbow = 1
 let g:vimclojure#DynamicHighlighting = 1
 let g:vimclojure#SplitPos = "bottom"
+let g:vimclojure#SplitSize = 10
 let g:vimclojure#FuzzyIndent = 1
 
 " Make F2 and S-F2 go to next/previous quickfix
