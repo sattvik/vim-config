@@ -99,3 +99,6 @@ let g:clang_periodic_quickfix=0
 let g:clang_complete_macros=1
 let g:clang_complete_patterns=1
 nmap <silent> <leader>qq :call g:ClangUpdateQuickFix()<CR>
+
+" LocalVim
+let g:localvimrc_sandbox = 0

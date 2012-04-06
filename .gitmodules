@@ -46,3 +46,6 @@
 [submodule "bundle/vim-eunuch"]
 	path = bundle/vim-eunuch
 	url = https://github.com/tpope/vim-eunuch.git
+[submodule "bundle/localvimrc"]
+	path = bundle/localvimrc
+	url = https://github.com/embear/vim-localvimrc/
