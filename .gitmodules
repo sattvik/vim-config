@@ -46,6 +46,3 @@
 [submodule "bundle/localvimrc"]
 	path = bundle/localvimrc
 	url = https://github.com/embear/vim-localvimrc/
-[submodule "bundle/taglist"]
-	path = bundle/taglist
-	url = https://github.com/thisivan/vim-taglist.git
