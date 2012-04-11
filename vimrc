@@ -45,11 +45,8 @@ let g:GPGUsePipes=1
 
 " Supertab
 let g:SuperTabDefaultCompletionType="context"
-"let g:SuperTabDefaultCompletionTypeDiscovery = [
-"      \ "&completefunc:<c-x><c-u>",
-"      \ "&omnifunc:<c-x><c-o>",
-"      \ ]
-"let g:SuperTabLongestHighlight=1
+let g:SuperTabLongestEnhanced=1
+let g:SuperTabLongestHighlight=1
 
 " LaTeX-suite
 set grepprg=grep\ -nH\ $*
