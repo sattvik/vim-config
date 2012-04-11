@@ -99,3 +99,13 @@ nmap <silent> <leader>qq :call g:ClangUpdateQuickFix()<CR>
 
 " LocalVim
 let g:localvimrc_sandbox = 0
+
+" Taglist
+let Tlist_Inc_Winwidth=0
+let Tlist_GainFocus_On_ToggleOpen=1
+let Tlist_Close_On_Select=1
+let Tlist_Exit_OnlyWindow=1
+let Tlist_Process_File_Always=1
+let Tlist_Use_Right_Window=1
+let Tlist_Enable_Fold_Column=0
+nmap <silent> <F12> :TlistToggle<CR>
