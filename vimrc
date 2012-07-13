@@ -99,3 +99,7 @@ nmap <silent> <leader>qq :call g:ClangUpdateQuickFix()<CR>
 
 " LocalVim
 let g:localvimrc_sandbox = 0
+
+" Ctrl-P
+nmap <silent> <leader>t :CtrlP<CR>
+let g:ctrlp_working_path_mode = 0
