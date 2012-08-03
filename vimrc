@@ -12,6 +12,7 @@ set encoding=utf-8
 set noexpandtab
 set fileencoding="utf-8"
 set foldmethod=syntax
+set foldlevelstart=99
 set hidden
 set history=1024
 set nohlsearch
