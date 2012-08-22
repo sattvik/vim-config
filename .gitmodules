@@ -55,3 +55,6 @@
 [submodule "bundle/align"]
 	path = bundle/align
 	url = https://github.com/vim-scripts/Align.git
+[submodule "bundle/vimoutliner"]
+	path = bundle/vimoutliner
+	url = https://github.com/vimoutliner/vimoutliner.git

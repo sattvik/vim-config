@@ -55,6 +55,9 @@ let g:tex_flavor='latex'
 let g:Tex_CompileRule_pdf = 'xelatex -shell-escape -interaction=nonstopmode $*'
 let g:Tex_DefaultTargetFormat = 'pdf'
 
+" Easytags options
+let g:easytags_updatetime_autodisable = 1
+
 " Tagbar
 let g:tagbar_autoclose = 1
 let g:tagbar_autofocus = 1
