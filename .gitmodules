@@ -61,3 +61,6 @@
 [submodule "bundle/orgmode"]
 	path = bundle/orgmode
 	url = https://github.com/jceb/vim-orgmode.git
+[submodule "bundle/markdown"]
+	path = bundle/markdown
+	url = https://github.com/hallison/vim-markdown.git
