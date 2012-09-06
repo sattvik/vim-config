@@ -64,3 +64,9 @@
 [submodule "bundle/markdown"]
 	path = bundle/markdown
 	url = https://github.com/hallison/vim-markdown.git
+[submodule "bundle/xmledit"]
+	path = bundle/xmledit
+	url = https://github.com/sukima/xmledit.git
+[submodule "bundle/vim-less"]
+	path = bundle/vim-less
+	url = https://github.com/groenewege/vim-less.git
