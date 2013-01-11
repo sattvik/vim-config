@@ -12,6 +12,7 @@ set encoding=utf-8
 set noexpandtab
 set fileencoding="utf-8"
 set foldmethod=syntax
+set foldlevelstart=99
 set hidden
 set history=1024
 set nohlsearch
@@ -53,6 +54,9 @@ set grepprg=grep\ -nH\ $*
 let g:tex_flavor='latex'
 let g:Tex_CompileRule_pdf = 'xelatex -shell-escape -interaction=nonstopmode $*'
 let g:Tex_DefaultTargetFormat = 'pdf'
+
+" Easytags options
+let g:easytags_updatetime_autodisable = 1
 
 " Tagbar
 let g:tagbar_autoclose = 1
@@ -101,6 +105,5 @@ nmap <silent> <leader>qq :call g:ClangUpdateQuickFix()<CR>
 let g:localvimrc_sandbox = 0
 
 " Ctrl-P
-nmap <silent> <leader>t :CtrlP<CR>
 let g:ctrlp_working_path_mode = 2
 let g:ctrlp_root_markers = ['.clang_complete']
