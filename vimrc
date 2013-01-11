@@ -102,4 +102,5 @@ let g:localvimrc_sandbox = 0
 
 " Ctrl-P
 nmap <silent> <leader>t :CtrlP<CR>
-let g:ctrlp_working_path_mode = 0
+let g:ctrlp_working_path_mode = 2
+let g:ctrlp_root_markers = ['.clang_complete']
