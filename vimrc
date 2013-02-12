@@ -95,10 +95,13 @@ let g:LustyJugglerShowKeys = 'a'
 
 " clang-complete
 let g:clang_auto_select=1
+let g:clang_close_preview=1
 let g:clang_complete_copen=1
-let g:clang_periodic_quickfix=0
 let g:clang_complete_macros=1
 let g:clang_complete_patterns=1
+let g:clang_periodic_quickfix=0
+let g:clang_use_library=1
+let g:clang_library_path='/usr/lib64/llvm'
 nmap <silent> <leader>qq :call g:ClangUpdateQuickFix()<CR>
 
 " LocalVim
