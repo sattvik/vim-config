@@ -64,3 +64,6 @@
 [submodule "bundle/cpp11"]
 	path = bundle/cpp11
 	url = https://github.com/vim-scripts/Cpp11-Syntax-Support.git
+[submodule "bundle/vim-powerline"]
+	path = bundle/vim-powerline
+	url = https://github.com/Lokaltog/vim-powerline
