@@ -60,26 +60,6 @@ let g:Tex_DefaultTargetFormat = 'pdf'
 nmap <silent> <C-_> :call NERDComment(0, "toggle")<cr>
 vmap <silent> <C-_> :call NERDComment(1, "toggle")<cr>
 
-" VimClojure settings
-let g:vimclojure#WantNailgun = 1
-let g:vimclojure#ParenRainbow = 1
-let g:vimclojure#ParenRainbowColors = {
-	\ '0': 'ctermfg=4',
-	\ '1': 'ctermfg=6',
-	\ '2': 'ctermfg=2',
-	\ '3': 'ctermfg=3',
-	\ '4': 'ctermfg=9',
-	\ '5': 'ctermfg=1',
-	\ '6': 'ctermfg=5',
-	\ '7': 'ctermfg=13',
-	\ '8': 'ctermfg=12',
-	\ '9': 'ctermfg=14',
-	\ }
-let g:vimclojure#DynamicHighlighting = 1
-let g:vimclojure#SplitPos = "bottom"
-let g:vimclojure#SplitSize = 10
-let g:vimclojure#FuzzyIndent = 1
-
 " Make F2 and S-F2 go to next/previous quickfix
 nmap <silent> <F2> :cn<cr>
 nmap <silent> <S-F2> :cp<cr>

@@ -25,9 +25,6 @@
 [submodule "bundle/qmake-syntax-vim"]
 	path = bundle/qmake-syntax-vim
 	url = https://github.com/sattvik/qmake-syntax-vim
-[submodule "bundle/vimclojure"]
-	path = bundle/vimclojure
-	url = https://github.com/vim-scripts/VimClojure.git
 [submodule "bundle/clang-complete"]
 	path = bundle/clang-complete
 	url = https://github.com/Rip-Rip/clang_complete.git
