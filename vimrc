@@ -33,6 +33,9 @@ let maplocalleader=","
 syntax enable
 filetype plugin indent on 
 
+set background=dark
+colorscheme solarized
+
 " C options
 let c_space_errors = 1
 
@@ -60,6 +63,18 @@ vmap <silent> <C-_> :call NERDComment(1, "toggle")<cr>
 " VimClojure settings
 let g:vimclojure#WantNailgun = 1
 let g:vimclojure#ParenRainbow = 1
+let g:vimclojure#ParenRainbowColors = {
+	\ '0': 'ctermfg=4',
+	\ '1': 'ctermfg=6',
+	\ '2': 'ctermfg=2',
+	\ '3': 'ctermfg=3',
+	\ '4': 'ctermfg=9',
+	\ '5': 'ctermfg=1',
+	\ '6': 'ctermfg=5',
+	\ '7': 'ctermfg=13',
+	\ '8': 'ctermfg=12',
+	\ '9': 'ctermfg=14',
+	\ }
 let g:vimclojure#DynamicHighlighting = 1
 let g:vimclojure#SplitPos = "bottom"
 let g:vimclojure#SplitSize = 10
@@ -76,7 +91,7 @@ nmap <silent> <F8> :TagbarToggle<CR>
 
 "Powerline
 let Powerline_symbols='unicode'
-let Powerline_colorscheme='sattvik'
+let Powerline_colorscheme='solarized16'
 set laststatus=2
 
 
