@@ -46,7 +46,7 @@ let g:WMGraphviz_output="png"
 let g:GPGUsePipes=1
 
 " Supertab
-let g:SuperTabDefaultCompletionType="context"
+let g:SuperTabDefaultCompletionType="<c-x><c-o>"
 let g:SuperTabLongestEnhanced=1
 let g:SuperTabLongestHighlight=1
 
@@ -74,6 +74,26 @@ let Powerline_symbols='unicode'
 let Powerline_colorscheme='solarized16'
 set laststatus=2
 
+" Rainbow parentheses
+let g:rbpt_colorpairs = [
+	\ [ '4',  '#268bd2'],
+	\ [ '6',  '#2aa198'],
+	\ [ '2',  '#859900'],
+	\ [ '3',  '#b58900'],
+	\ [ '9',  '#cb4b16'],
+	\ [ '1',  '#dc322f'],
+	\ [ '5',  '#d33682'],
+	\ [ '13', '#6c71c4'],
+	\ ]
+"let g:rbpt_max = 8
+
+augroup rainbow_parentheses
+  au!
+  au VimEnter * RainbowParenthesesToggle
+  au Syntax * RainbowParenthesesLoadRound
+  au Syntax * RainbowParenthesesLoadSquare
+  au Syntax * RainbowParenthesesLoadBraces
+augroup END
 
 " Lusty juggler
 let g:LustyJugglerShowKeys = 'a'
