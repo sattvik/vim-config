@@ -17,11 +17,14 @@ Bundle 'gmarik/vundle'
 """ My bundles
 """
 
+" a.vim
+Bundle 'a.vim'
+
 " Align
 Bundle 'Align'
 
 " C++11 support
-Bundle 'Cpp11-Syntax-Support'
+Bundle 'vim-cpp-enhanced-highlight'
 
 " clang_complete
 Bundle 'Rip-Rip/clang_complete'
@@ -123,6 +126,9 @@ Bundle 'ervandew/supertab'
 let g:SuperTabDefaultCompletionType="<c-x><c-o>"
 let g:SuperTabLongestEnhanced=1
 let g:SuperTabLongestHighlight=1
+
+" UniCycle
+Bundle 'UniCycle'
 
 " Unix support
 Bundle 'tpope/vim-eunuch'
