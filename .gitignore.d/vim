@@ -1,3 +1,7 @@
-.vim/bundle/
-.vim/.netrwhist
-.*.swp
+/*
+!/.gitignore.d/
+/.gitignore.d/*
+!/.gitignore.d/vim
+!/.vim/
+/.vim/bundle/
+/.vim/.netrwhist
