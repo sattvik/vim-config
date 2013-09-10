@@ -170,6 +170,10 @@ set tabstop=8
 set title
 set wildmenu
 
+if match($SHELL, 'lzsh$') != -1
+  set shellpipe=2>&1\|\ tee
+end
+
 let mapleader=","
 let maplocalleader=","
 
