@@ -143,6 +143,10 @@ Bundle 'vimoutliner/vimoutliner'
 Bundle 'wmgraphviz'
 let g:WMGraphviz_output="png"
 
+" XML Edit
+Bundle 'sukima/xmledit'
+let g:xml_jump_string="`"
+
 """
 """ General Vim configuration
 """
