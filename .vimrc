@@ -110,6 +110,9 @@ augroup END
 " Scala
 Bundle 'derekwyatt/vim-scala'
 
+" SlimV
+Bundle 'slimv.vim'
+
 " Solarized
 Bundle 'altercation/vim-colors-solarized'
 set background=dark
