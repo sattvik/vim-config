@@ -67,6 +67,7 @@ let g:Tex_DefaultTargetFormat = 'pdf'
 " LocalVim
 Bundle 'localvimrc'
 let g:localvimrc_sandbox = 0
+let g:localvimrc_whitelist = '\v/.*/(corelibs|iPick)/.*'
 
 " Lusty juggler
 Bundle 'sjbach/lusty'
