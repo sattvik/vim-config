@@ -128,7 +128,7 @@ colorscheme solarized
 
 " Supertab
 Bundle 'ervandew/supertab'
-let g:SuperTabDefaultCompletionType="<c-x><c-o>"
+let g:SuperTabDefaultCompletionType="context"
 let g:SuperTabLongestEnhanced=1
 let g:SuperTabLongestHighlight=1
 
