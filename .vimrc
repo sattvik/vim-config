@@ -103,17 +103,20 @@ let g:rbpt_colorpairs = [
 	\ [ '6',  '#2aa198'],
 	\ [ '4',  '#268bd2'],
 	\ ]
-"let g:rbpt_max = 8
+
 augroup rainbow_parentheses
   au!
-  au VimEnter * RainbowParenthesesToggle
-  au Syntax * RainbowParenthesesLoadRound
-  au Syntax * RainbowParenthesesLoadSquare
-  au Syntax * RainbowParenthesesLoadBraces
+  au VimEnter * RainbowParenthesesActivate
+  au BufEnter * RainbowParenthesesLoadRound
+  au BufEnter * RainbowParenthesesLoadSquare
+  au BufEnter * RainbowParenthesesLoadBraces
 augroup END
 
 " Scala
 Bundle 'derekwyatt/vim-scala'
+
+" SlimV
+Bundle 'slimv.vim'
 
 " Solarized
 Bundle 'altercation/vim-colors-solarized'
@@ -144,6 +147,10 @@ Bundle 'vimoutliner/vimoutliner'
 " WM Graphviz
 Bundle 'wmgraphviz'
 let g:WMGraphviz_output="png"
+
+" XML Edit
+Bundle 'sukima/xmledit'
+let g:xml_jump_string="`"
 
 """
 """ General Vim configuration
