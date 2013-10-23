@@ -44,8 +44,7 @@ unlet s:which_clang
 
 " Ctrl-P
 Bundle 'kien/ctrlp.vim'
-let g:ctrlp_working_path_mode = 2
-let g:ctrlp_root_markers = ['.clang_complete']
+let g:ctrlp_working_path_mode = 'ra'
 
 " Fireplace (Clojure support)
 Bundle 'tpope/vim-fireplace'
