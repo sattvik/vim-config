@@ -193,10 +193,29 @@ filetype plugin indent on
 " C options
 let c_space_errors = 1
 
+" Terminal settings
+if &term =~ "screen" && $TMUX != ""
+  set t_ts=]2;
+  set t_fs=\
+endif
+
+set <S-F1>=[23~
+set <S-F2>=[24~
+set <S-F3>=[25~
+set <S-F4>=[26~
+set <S-F5>=[28~
+set <S-F6>=[29~
+set <S-F7>=[31~
+set <S-F8>=[32~
+set <S-F9>=[33~
+set <S-F10>=[34~
+set <S-F11>=[23$
+set <S-F12>=[24$
+
 " F2 and S-F2 go to next/previous quickfix
 nmap <silent> <F2> :cn<cr>
 nmap <silent> <S-F2> :cp<cr>
 
 " Make hotkeys
 nmap <silent> <F9>  :mak<cr>
-nmap <silent> <F10> :mak check<cr>
+nmap <silent> <S-F9> :mak check<cr>
