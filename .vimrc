@@ -14,6 +14,14 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 """
+""" Set leader
+"""
+
+let mapleader=","
+let maplocalleader=","
+noremap \ ,
+
+"""
 """ My bundles
 """
 
@@ -44,7 +52,10 @@ unlet s:which_clang
 
 " Ctrl-P
 Bundle 'kien/ctrlp.vim'
+let g:ctrlp_by_filename = 1
 let g:ctrlp_working_path_mode = 'ra'
+nmap <silent> <leader>lr :CtrlPCurFile<CR>
+nmap <silent> <leader>lb :CtrlPBuffer<CR>
 
 " Fireplace (Clojure support)
 Bundle 'tpope/vim-fireplace'
@@ -67,10 +78,6 @@ let g:Tex_DefaultTargetFormat = 'pdf'
 Bundle 'localvimrc'
 let g:localvimrc_sandbox = 0
 let g:localvimrc_whitelist = '\v/.*/(corelibs|iPick)/.*'
-
-" Lusty juggler
-Bundle 'sjbach/lusty'
-let g:LustyJugglerShowKeys = 'a'
 
 " Markdown
 Bundle 'tpope/vim-markdown'
@@ -102,7 +109,6 @@ let g:rbpt_colorpairs = [
 	\ [ '6',  '#2aa198'],
 	\ [ '4',  '#268bd2'],
 	\ ]
-
 augroup rainbow_parentheses
   au!
   au VimEnter * RainbowParenthesesActivate
@@ -115,7 +121,8 @@ augroup END
 Bundle 'derekwyatt/vim-scala'
 
 " SlimV
-Bundle 'slimv.vim'
+Bundle 'kovisoft/slimv'
+let g:paredit_shortmaps = 1
 
 " Solarized
 Bundle 'altercation/vim-colors-solarized'
@@ -142,6 +149,9 @@ Bundle 'UniCycle'
 
 " Unix support
 Bundle 'tpope/vim-eunuch'
+
+" vim-clojure-static
+Bundle 'guns/vim-clojure-static'
 
 " VimOutliner
 Bundle 'vimoutliner/vimoutliner'
@@ -183,9 +193,6 @@ set wildmenu
 if match($SHELL, 'lzsh$') != -1
   set shellpipe=2>&1\|\ tee
 end
-
-let mapleader=","
-let maplocalleader=","
 
 syntax enable
 filetype plugin indent on
