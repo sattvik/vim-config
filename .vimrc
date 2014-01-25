@@ -64,6 +64,9 @@ Bundle 'guns/vim-clojure-static'
 Bundle 'kovisoft/slimv'
 let g:paredit_shortmaps = 1
 
+" Dart support
+Bundle 'dart-lang/dart-vim-plugin'
+
 " Fugitive (Git suport)
 Bundle 'tpope/vim-fugitive'
 
