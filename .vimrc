@@ -57,8 +57,12 @@ let g:ctrlp_working_path_mode = 'ra'
 nmap <silent> <leader>lr :CtrlPCurFile<CR>
 nmap <silent> <leader>lb :CtrlPBuffer<CR>
 
-" Fireplace (Clojure support)
+" Clojure support
 Bundle 'tpope/vim-fireplace'
+Bundle 'guns/vim-clojure-highlight'
+Bundle 'guns/vim-clojure-static'
+Bundle 'kovisoft/slimv'
+let g:paredit_shortmaps = 1
 
 " Fugitive (Git suport)
 Bundle 'tpope/vim-fugitive'
@@ -120,10 +124,6 @@ augroup END
 " Scala
 Bundle 'derekwyatt/vim-scala'
 
-" SlimV
-Bundle 'kovisoft/slimv'
-let g:paredit_shortmaps = 1
-
 " Solarized
 Bundle 'altercation/vim-colors-solarized'
 set background=dark
@@ -149,9 +149,6 @@ Bundle 'UniCycle'
 
 " Unix support
 Bundle 'tpope/vim-eunuch'
-
-" vim-clojure-static
-Bundle 'guns/vim-clojure-static'
 
 " VimOutliner
 Bundle 'vimoutliner/vimoutliner'
