@@ -95,11 +95,16 @@ Bundle 'scrooloose/nerdcommenter'
 nmap <silent> <C-_> :call NERDComment(0, "toggle")<cr>
 vmap <silent> <C-_> :call NERDComment(1, "toggle")<cr>
 
-" Powerline
-Bundle 'Lokaltog/vim-powerline'
-let Powerline_symbols='unicode'
-let Powerline_colorscheme='solarized16'
+" vim-airline, powerline replacement
+Bundle 'bling/vim-airline'
+let g:airline_theme='solarized'
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '◀'
 set laststatus=2
+set ttimeoutlen=50
 
 " QMake syntax
 Bundle 'sattvik/qmake-syntax-vim'
