@@ -62,7 +62,7 @@ Bundle 'tpope/vim-fireplace'
 Bundle 'guns/vim-clojure-highlight'
 Bundle 'guns/vim-clojure-static'
 Bundle 'kovisoft/slimv'
-let g:paredit_shortmaps = 1
+let g:paredit_smartjump = 1
 
 " Dart support
 Bundle 'dart-lang/dart-vim-plugin'
