@@ -233,3 +233,6 @@ nmap <silent> <S-F2> :cp<cr>
 " Make hotkeys
 nmap <silent> <F9>  :mak<cr>
 nmap <silent> <S-F9> :mak check<cr>
+
+" C/C++ syntax
+let c_space_errors = 1
