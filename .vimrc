@@ -73,6 +73,7 @@ let g:projectiles = {
 Bundle 'tpope/vim-dispatch'
 
 " Clojure support
+Bundle 'tpope/vim-leiningen'
 Bundle 'tpope/vim-fireplace'
 Bundle 'guns/vim-clojure-highlight'
 Bundle 'guns/vim-clojure-static'
