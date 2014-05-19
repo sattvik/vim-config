@@ -25,9 +25,6 @@ noremap \ ,
 """ My bundles
 """
 
-" a.vim
-Bundle 'a.vim'
-
 " Align
 Bundle 'Align'
 
@@ -58,6 +55,22 @@ let g:ctrlp_by_filename = 1
 let g:ctrlp_working_path_mode = 'ra'
 nmap <silent> <leader>lr :CtrlPCurFile<CR>
 nmap <silent> <leader>lb :CtrlPBuffer<CR>
+
+" Add projectionist + dispatch
+Bundle 'tpope/vim-projectionist'
+nmap <silent> <leader>is :A<CR>
+imap <silent> <leader>is <ESC>:A<CR>
+let g:projectiles = {
+	\  "*": {
+	\    "*.cpp": {
+	\      "alternate": "{}.h"
+	\    },
+	\    "*.h": {
+	\      "alternate": "{}.cpp"
+	\    }
+	\  }
+	\}
+Bundle 'tpope/vim-dispatch'
 
 " Clojure support
 Bundle 'tpope/vim-fireplace'
@@ -286,8 +299,9 @@ nmap <silent> <F2> :cn<cr>
 nmap <silent> <S-F2> :cp<cr>
 
 " Make hotkeys
-nmap <silent> <F9>  :mak<cr>
-nmap <silent> <S-F9> :mak check<cr>
+nmap <silent> <F21>   :Make<cr>
+nmap <silent> <S-F21> :Dispatch<cr>
+nmap <silent> <S-F22> :Start<cr>
 
 " C/C++ syntax
 let c_space_errors = 1
