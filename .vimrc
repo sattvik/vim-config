@@ -216,18 +216,70 @@ if &term =~ "screen" && $TMUX != ""
   set t_fs=\
 endif
 
-set <S-F1>=[23~
-set <S-F2>=[24~
-set <S-F3>=[25~
-set <S-F4>=[26~
-set <S-F5>=[28~
-set <S-F6>=[29~
-set <S-F7>=[31~
-set <S-F8>=[32~
-set <S-F9>=[33~
-set <S-F10>=[34~
-set <S-F11>=[23$
-set <S-F12>=[24$
+set <S-F1>=[1;2P
+set <S-F2>=[1;2Q
+set <S-F3>=[1;2R
+set <S-F4>=[1;2S
+set <S-F5>=[15;2~
+set <S-F6>=[17;2~
+set <S-F7>=[18;2~
+set <S-F8>=[19;2~
+set <S-F9>=[20;2~
+set <S-F10>=[21;2~
+set <S-F11>=[23;2~
+set <S-F12>=[24;2~
+
+" Ctrl(-Shift)?-[F1-F12]
+set <F13>=[1;5P
+set <S-F13>=[1;6P
+set <F14>=[1;5Q
+set <S-F14>=[1;6Q
+set <F15>=[1;5R
+set <S-F15>=[1;6R
+set <F16>=[1;5S
+set <S-F16>=[1;6S
+set <F17>=[15;5~
+set <S-F17>=[15;6~
+set <F18>=[17;5~
+set <S-F18>=[17;6~
+set <F19>=[18;5~
+set <S-F19>=[18;6~
+set <F20>=[19;5~
+set <S-F20>=[19;6~
+set <F21>=[20;5~
+set <S-F21>=[20;6~
+set <F22>=[21;5~
+set <S-F22>=[21;6~
+set <F23>=[23;5~
+set <S-F23>=[23;6~
+set <F24>=[24;5~
+set <S-F24>=[24;6~
+
+" Alt(-Shift)?-[F1-F12]
+set <F25>=[1;3P
+set <S-F25>=[1;4P
+set <F26>=[1;3Q
+set <S-F26>=[1;4Q
+set <F27>=[1;3R
+set <S-F27>=[1;4R
+set <F28>=[1;3S
+set <S-F28>=[1;4S
+set <F29>=[15;3~
+set <S-F29>=[15;4~
+set <F30>=[17;3~
+set <S-F30>=[17;4~
+set <F31>=[18;3~
+set <S-F31>=[18;4~
+set <F32>=[19;3~
+set <S-F32>=[19;4~
+set <F33>=[20;3~
+set <S-F33>=[20;4~
+set <F34>=[21;3~
+set <S-F34>=[21;4~
+set <F35>=[23;3~
+set <S-F35>=[23;4~
+set <F36>=[24;3~
+set <S-F36>=[24;4~
 
 " F2 and S-F2 go to next/previous quickfix
 nmap <silent> <F2> :cn<cr>
