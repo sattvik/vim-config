@@ -236,3 +236,7 @@ nmap <silent> <S-F9> :mak check<cr>
 
 " C/C++ syntax
 let c_space_errors = 1
+
+" Undo persistence
+set undofile
+au BufWritePre /tmp/* setlocal noundofile
