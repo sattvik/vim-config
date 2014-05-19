@@ -163,6 +163,9 @@ Bundle 'tpope/vim-eunuch'
 " VimOutliner
 Bundle 'vimoutliner/vimoutliner'
 
+"VimRepress
+Bundle 'VimRepress'
+
 " WM Graphviz
 Bundle 'wmgraphviz'
 let g:WMGraphviz_output="png"
