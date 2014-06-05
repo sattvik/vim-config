@@ -139,10 +139,10 @@ let g:rbpt_colorpairs = [
 	\ ]
 augroup rainbow_parentheses
   au!
-  au VimEnter * RainbowParenthesesActivate
-  au BufEnter * RainbowParenthesesLoadRound
-  au BufEnter * RainbowParenthesesLoadSquare
-  au BufEnter * RainbowParenthesesLoadBraces
+  au VimEnter *.clj,*.cljs RainbowParenthesesActivate
+  au BufEnter *.clj,*.cljs RainbowParenthesesLoadRound
+  au BufEnter *.clj,*.cljs RainbowParenthesesLoadSquare
+  au BufEnter *.clj,*.cljs RainbowParenthesesLoadBraces
 augroup END
 
 " Scala
