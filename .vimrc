@@ -42,7 +42,13 @@ if match(s:which_clang, '/') != -1
   let g:clang_snippets=0
   let g:clang_close_preview=1
   let g:clang_use_library=1
-  let g:clang_library_path='/usr/lib64'
+  let s:os_type=system('uname -s')
+  if match(s:os_type, 'Linux') == 0
+    let g:clang_library_path='/usr/lib64'
+  elseif match(s:os_type, 'Darwin') == 0
+    let g:clang_library_path='/Library/Developer/CommandLineTools/usr/lib'
+  endif
+  unlet s:os_type
   let g:clang_complete_macros=1
   let g:clang_complete_patterns=1
   nmap <silent> <leader>qq :call g:ClangUpdateQuickFix()<CR>
