@@ -51,6 +51,7 @@ if match(s:which_clang, '/') != -1
   unlet s:os_type
   let g:clang_complete_macros=1
   let g:clang_complete_patterns=1
+  let g:clang_auto_user_options="compile_commands.json, .clang_complete, path"
   nmap <silent> <leader>qq :call g:ClangUpdateQuickFix()<CR>
 endif
 unlet s:which_clang
