@@ -85,6 +85,7 @@ Bundle 'tpope/vim-fireplace'
 Bundle 'guns/vim-clojure-highlight'
 Bundle 'guns/vim-clojure-static'
 Bundle 'kovisoft/slimv'
+let g:slimv_disable_clojure = 1
 let g:paredit_smartjump = 1
 
 "" Dart support
@@ -111,6 +112,7 @@ let g:localvimrc_whitelist = '\v/.*/(corelibs|iPick)/.*'
 
 " Markdown
 Bundle 'tpope/vim-markdown'
+let g:markdown_fenced_languges=['clojure']
 
 " NERD commentor
 Bundle 'scrooloose/nerdcommenter'
@@ -193,7 +195,7 @@ let g:WMGraphviz_output="png"
 
 " XML Edit
 Bundle 'sukima/xmledit'
-let g:xml_jump_string="`"
+let g:xml_jump_string="¦"
 
 """
 """ General Vim configuration
