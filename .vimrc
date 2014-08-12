@@ -29,7 +29,7 @@ noremap \ ,
 Bundle 'Align'
 
 " C++11 support
-Bundle 'vim-cpp-enhanced-highlight'
+"Bundle 'vim-cpp-enhanced-highlight'
 
 " clang_complete
 let s:which_clang=system('which clang')
@@ -87,8 +87,8 @@ Bundle 'guns/vim-clojure-static'
 Bundle 'kovisoft/slimv'
 let g:paredit_smartjump = 1
 
-" Dart support
-Bundle 'dart-lang/dart-vim-plugin'
+"" Dart support
+"Bundle 'dart-lang/dart-vim-plugin'
 
 " Fugitive (Git suport)
 Bundle 'tpope/vim-fugitive'
@@ -129,8 +129,8 @@ let g:airline_right_sep = '◀'
 set laststatus=2
 set ttimeoutlen=50
 
-" QMake syntax
-Bundle 'sattvik/qmake-syntax-vim'
+"" QMake syntax
+"Bundle 'sattvik/qmake-syntax-vim'
 
 " Rainbow parentheses
 Bundle 'kien/rainbow_parentheses.vim'
@@ -152,8 +152,8 @@ augroup rainbow_parentheses
   au BufEnter *.clj,*.cljs RainbowParenthesesLoadBraces
 augroup END
 
-" Scala
-Bundle 'derekwyatt/vim-scala'
+"" Scala
+"Bundle 'derekwyatt/vim-scala'
 
 " Solarized
 Bundle 'altercation/vim-colors-solarized'
@@ -172,11 +172,11 @@ let g:SuperTabDefaultCompletionType="context"
 let g:SuperTabLongestEnhanced=1
 let g:SuperTabLongestHighlight=1
 
-" todo.txt
-Bundle 'freitass/todo.txt-vim'
+"" todo.txt
+"Bundle 'freitass/todo.txt-vim'
 
-" UniCycle
-Bundle 'UniCycle'
+"" UniCycle
+"Bundle 'UniCycle'
 
 " Unix support
 Bundle 'tpope/vim-eunuch'
@@ -184,8 +184,8 @@ Bundle 'tpope/vim-eunuch'
 " VimOutliner
 Bundle 'vimoutliner/vimoutliner'
 
-"VimRepress
-Bundle 'VimRepress'
+""VimRepress
+"Bundle 'VimRepress'
 
 " WM Graphviz
 Bundle 'wmgraphviz'
