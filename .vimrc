@@ -67,7 +67,7 @@ nmap <silent> <leader>lb :CtrlPBuffer<CR>
 Bundle 'tpope/vim-projectionist'
 nmap <silent> <leader>is :A<CR>
 imap <silent> <leader>is <ESC>:A<CR>
-let g:projectiles = {
+let g:projectionist_heuristics = {
 	\  "*": {
 	\    "*.cpp": {
 	\      "alternate": "{}.h"
