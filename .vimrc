@@ -312,6 +312,9 @@ nmap <silent> <S-F2> :cp<cr>
 nmap <silent> <F21>   :Make<cr>
 nmap <silent> <S-F21> :Dispatch<cr>
 nmap <silent> <S-F22> :Start<cr>
+nmap <silent> <leader>dm :Make<cr>
+nmap <silent> <leader>dd :Dispatch<cr>
+nmap <silent> <leader>ds :Start<cr>
 
 " C/C++ syntax
 let c_space_errors = 1
