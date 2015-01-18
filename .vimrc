@@ -120,6 +120,11 @@ Bundle 'scrooloose/nerdcommenter'
 nmap <silent> <C-_> :call NERDComment(0, "toggle")<cr>
 vmap <silent> <C-_> :call NERDComment(1, "toggle")<cr>
 
+" Pandoc support
+Plugin 'vim-pandoc/vim-pandoc'
+Plugin 'vim-pandoc/vim-pandoc-syntax'
+Plugin 'vim-pandoc/vim-markdownfootnotes'
+
 " vim-airline, powerline replacement
 Bundle 'bling/vim-airline'
 let g:airline_theme='solarized'
