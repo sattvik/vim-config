@@ -177,8 +177,13 @@ let g:SuperTabLongestHighlight=1
 "" todo.txt
 "Bundle 'freitass/todo.txt-vim'
 
-"" UniCycle
-"Bundle 'UniCycle'
+" Text quotes
+Bundle 'kana/vim-textobj-user'
+Bundle 'reedes/vim-textobj-quote'
+augroup textobj_quote
+  autocmd!
+  autocmd FileType markdown call textobj#quote#init()
+augroup END
 
 " Unix support
 Bundle 'tpope/vim-eunuch'
@@ -322,3 +327,6 @@ let c_space_errors = 1
 " Undo persistence
 set undofile
 au BufWritePre /tmp/* setlocal noundofile
+
+" My blosxom files
+au BufNewFile,BufRead *.blosxom set filetype=markdown spell
