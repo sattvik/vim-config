@@ -159,6 +159,10 @@ augroup rainbow_parentheses
   au BufEnter *.clj,*.cljs RainbowParenthesesLoadBraces
 augroup END
 
+" Ruby support
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-rake'
+
 "" Scala
 "Bundle 'derekwyatt/vim-scala'
 
