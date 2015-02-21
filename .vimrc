@@ -125,6 +125,9 @@ Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
 Plugin 'vim-pandoc/vim-markdownfootnotes'
 
+" Prolog support
+Plugin 'adimit/prolog.vim'
+
 " vim-airline, powerline replacement
 Bundle 'bling/vim-airline'
 let g:airline_theme='solarized'
