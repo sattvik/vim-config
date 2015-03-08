@@ -197,6 +197,9 @@ augroup textobj_quote
   autocmd FileType markdown call textobj#quote#init()
 augroup END
 
+" tmux support
+Bundle 'vimez/vim-tmux'
+
 " Unix support
 Bundle 'tpope/vim-eunuch'
 
