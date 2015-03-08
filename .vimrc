@@ -226,7 +226,9 @@ set nocompatible
 set completeopt=menu,preview,longest
 set encoding=utf-8
 set noexpandtab
-set fileencoding="utf-8"
+if &modifiable
+  set fileencoding="utf-8"
+endif
 set foldmethod=syntax
 set foldlevelstart=99
 set hidden
