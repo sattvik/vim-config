@@ -91,6 +91,14 @@ let g:paredit_smartjump = 1
 "" Dart support
 "Bundle 'dart-lang/dart-vim-plugin'
 
+" Dash
+Plugin 'rizzatti/dash.vim'
+let g:dash_map = {
+  \ 'clojure' : ['clojure', 'android', 'java']
+  \}
+nmap <silent> <leader>k <Plug>DashSearch
+nmap <silent> <leader>K <Plug>DashGlobalSearch
+
 " Fugitive (Git suport)
 Bundle 'tpope/vim-fugitive'
 
