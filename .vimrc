@@ -243,6 +243,7 @@ set hidden
 set history=1024
 set nohlsearch
 set incsearch
+set number
 set ruler
 set shellslash
 set shiftwidth=2
