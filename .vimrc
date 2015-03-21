@@ -88,6 +88,9 @@ Bundle 'kovisoft/slimv'
 let g:slimv_disable_clojure = 1
 let g:paredit_smartjump = 1
 
+" commentary
+Plugin 'tpope/vim-commentary'
+
 "" Dart support
 "Bundle 'dart-lang/dart-vim-plugin'
 
@@ -121,12 +124,6 @@ let g:localvimrc_whitelist = '\v/.*/(corelibs|iPick)/.*'
 " Markdown
 Bundle 'tpope/vim-markdown'
 let g:markdown_fenced_languges=['clojure']
-
-" NERD commentor
-Bundle 'scrooloose/nerdcommenter'
-" Make Ctrl-/ toggle comments with NERD commenter
-nmap <silent> <C-_> :call NERDComment(0, "toggle")<cr>
-vmap <silent> <C-_> :call NERDComment(1, "toggle")<cr>
 
 " numbertoggle
 let g:NumberToggleTrigger="<leader>n"
