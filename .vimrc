@@ -79,6 +79,9 @@ let g:projectionist_heuristics = {
 	\}
 Bundle 'tpope/vim-dispatch'
 
+" characterize
+Plugin 'tpope/vim-characterize'
+
 " Clojure support
 Bundle 'tpope/vim-leiningen'
 Bundle 'tpope/vim-fireplace'
@@ -171,6 +174,9 @@ augroup rainbow_parentheses
   au BufEnter *.clj,*.cljs RainbowParenthesesLoadBraces
 augroup END
 
+" repeat
+Plugin 'tpope/vim-repeat'
+
 " Ruby support
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rake'
@@ -195,6 +201,9 @@ let g:SuperTabDefaultCompletionType="context"
 let g:SuperTabLongestEnhanced=1
 let g:SuperTabLongestHighlight=1
 
+" surround, uses repeat
+Plugin 'tpope/vim-surround'
+
 "" todo.txt
 "Bundle 'freitass/todo.txt-vim'
 
@@ -208,6 +217,9 @@ augroup END
 
 " tmux support
 Bundle 'vimez/vim-tmux'
+
+" Unimpaired, requires 'tpope/vim-repeat'
+Plugin 'tpope/vim-unimpaired'
 
 " Unix support
 Bundle 'tpope/vim-eunuch'
