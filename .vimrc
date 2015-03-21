@@ -128,6 +128,10 @@ Bundle 'scrooloose/nerdcommenter'
 nmap <silent> <C-_> :call NERDComment(0, "toggle")<cr>
 vmap <silent> <C-_> :call NERDComment(1, "toggle")<cr>
 
+" numbertoggle
+let g:NumberToggleTrigger="<leader>n"
+Plugin 'jeffkreeftmeijer/vim-numbertoggle'
+
 " Pandoc support
 Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
@@ -244,6 +248,7 @@ set history=1024
 set nohlsearch
 set incsearch
 set number
+set relativenumber
 set ruler
 set shellslash
 set shiftwidth=2
