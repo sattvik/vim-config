@@ -235,6 +235,7 @@ let g:xml_jump_string="¦"
 set autoindent
 set backspace=indent,eol,start
 set nocompatible
+set clipboard+=unnamed
 set completeopt=menu,preview,longest
 set encoding=utf-8
 set noexpandtab
