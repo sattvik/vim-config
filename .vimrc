@@ -212,8 +212,13 @@ Bundle 'kana/vim-textobj-user'
 Bundle 'reedes/vim-textobj-quote'
 augroup textobj_quote
   autocmd!
+  autocmd FileType asciidoc call textobj#quote#init()
   autocmd FileType markdown call textobj#quote#init()
+  autocmd FileType tex call textobj#quote#init()
+  autocmd FileType votl call textobj#quote#init()
 augroup END
+let g:textobj#quote#dsingleMotion = 'q'
+let g:textobj#quote#doubleMotion = 'Q'
 
 " tmux support
 Bundle 'vimez/vim-tmux'
