@@ -28,6 +28,9 @@ noremap \ ,
 " Align
 Bundle 'Align'
 
+" Asciidoc
+Plugin 'mjakl/vim-asciidoc'
+
 " C++11 support
 "Bundle 'vim-cpp-enhanced-highlight'
 
