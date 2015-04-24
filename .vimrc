@@ -219,8 +219,9 @@ augroup textobj_quote
   autocmd FileType markdown call textobj#quote#init()
   autocmd FileType tex call textobj#quote#init()
   autocmd FileType votl call textobj#quote#init()
+  autocmd FileType clojure call textobj#quote#init({'educate': 0})
 augroup END
-let g:textobj#quote#dsingleMotion = 'q'
+let g:textobj#quote#singleMotion = 'q'
 let g:textobj#quote#doubleMotion = 'Q'
 
 " tmux support
