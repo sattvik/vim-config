@@ -90,9 +90,9 @@ Plugin 'tpope/vim-leiningen'
 Plugin 'tpope/vim-fireplace'
 Plugin 'guns/vim-clojure-highlight'
 Plugin 'guns/vim-clojure-static'
-Plugin 'guns/vim-sexp'
-Plugin 'tpope/vim-sexp-mappings-for-regular-people'
-let g:sexp_insert_after_wrap=0
+Plugin 'kovisoft/slimv'
+let g:slimv_disable_clojure = 1
+let g:paredit_smartjump = 1
 
 " commentary
 Plugin 'tpope/vim-commentary'
